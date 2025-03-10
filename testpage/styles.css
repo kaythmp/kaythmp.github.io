@@ -7,7 +7,7 @@
 body{
     min-height: 100vh;
     width: 100%;
-    background-image: url(kato_trikala.jpg);
+    background-color:antiquewhite;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,68 +18,76 @@ body{
     width: 100%;
 }
 nav {
+    z-index: -1;
+    width: fit-content;
     height: fit-content;
     padding: 2% 6%;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     position: sticky;
     top: 0;
 }
 .navlinks {
-    text-align: left;
+    text-align: center;
     position: sticky;
     top: 0;
 }
 
 .navlinks ul li {
+    border-style: solid;
+    border-color: lightcoral;
+    border-radius: 2px;
+    border-width: 1px;
     list-style: none;
-    display: inline-block;
+    /*display: inline-block;*/
     padding: 8px 12px;
     position: sticky;
+    margin-bottom: 2px;
 }
 
 .navlinks ul li a {
-    color: white;
+    width: fit-content;
+    color: black;
     text-decoration: none;
     font-size: 13px;
     position: sticky;
 }
 
-.navlinks ul li::after {
+.navlinks ul li a::after {
     content: '';
     width: 0%;
     height: 1px;
-    background: white;
+    background: black;
     display: block;
     margin: auto;
     transition: 0.5s;
 }
 
-.navlinks ul li:hover::after {
+.navlinks ul li a:hover::after {
     width: 100%;
 }
 
-.text {
+.header-text {
+    float: left;
     height: fit-content;
     width: 100%;
     margin: 0 auto;
-    color: white;
+    color: black;
     position: absolute;
-    top: 10%;
     text-align: center;
 }
 
-.text h1 {
+.header-text h1 {
     margin: 0 auto;
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: lighter;
     position: relative;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
 }
-/*
-.text h2, p {
+
+.header-text h2, p {
     width: 50%;
     margin: 0 auto;
     padding: 10px 20px;
@@ -87,28 +95,5 @@ nav {
     position: relative;
     color: black;
     background-color: aliceblue;
-}
-    */
-
-.body {
-    width: 50%;
-    margin: 0 auto;
-    padding: 10px 20px;
-    text-align: left;
-    position: relative;
-    color: black;
-    background-color: aliceblue;
-    border-radius: 4px;
-    height: fit-content;
-}
-
-.body h2 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-weight: lighter;
-}
-
-.body p {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    border-radius: 0%;
 }
