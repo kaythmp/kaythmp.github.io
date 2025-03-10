@@ -90,7 +90,7 @@ nav {
 }
     */
 
-.body {
+.body-content {
     width: 50%;
     margin: 0 auto;
     padding: 10px 20px;
@@ -102,13 +102,13 @@ nav {
     height: fit-content;
 }
 
-.body h2 {
+.body-content h2 {
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: lighter;
 }
 
-.body p {
+.body-content p {
     margin-top: 15px;
     margin-bottom: 15px;
 }
